@@ -18,6 +18,7 @@ include(
     ":lib:kmdc-drawer",
     ":lib:kmdc-form-field",
     ":lib:kmdc-icon-button",
+    ":lib:kmdc-icon",
     ":lib:kmdc-layout-grid",
     ":lib:kmdc-linear-progress",
     ":lib:kmdc-list",
