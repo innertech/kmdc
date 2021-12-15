@@ -14,6 +14,9 @@ repositories {
 description = "Local consumer sandbox"
 
 kotlin {
+  jvm {
+    withJava()
+  }
   js {
     binaries.executable()
     useCommonJs()
@@ -29,9 +32,10 @@ kotlin {
     }
   }
   sourceSets {
-    named("commonTest") {
+    named("commonMain") {
       dependencies {
-        implementation("dev.petuska:test")
+        api(compose.web.core)
+        api(compose.runtime)
       }
     }
     named("jsMain") {
