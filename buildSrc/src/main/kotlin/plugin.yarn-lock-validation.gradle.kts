@@ -104,21 +104,6 @@ tasks {
       val actual = File(yarnLockBuildPath).readText().trim()
 
       if (expected != actual) {
-        // WORKAROUND https://youtrack.jetbrains.com/issue/IDEA-267343 –
-        //     'idea diff ...' produces an exception and does not immediately complete, although it
-        // does
-        //     open the diff window.
-        //     Replace the following workaround with the code in comments when the issue is fixed.
-        ProcessBuilder("idea", "diff", yarnLockPrimaryPath, yarnLockBuildPath)
-          .redirectOutput(ProcessBuilder.Redirect.INHERIT)
-          .redirectError(ProcessBuilder.Redirect.DISCARD)
-          .start()
-        /* Replace with:
-        exec {
-            commandLine = mutableListOf("idea", "diff", yarnLockPrimaryPath, yarnLockBuildPath)
-        }
-        */
-
         throw AssertionError(
           "The build-generated '${yarnLockName}' differs from '$yarnLockPrimaryName' in the project root directory." +
               " Each difference indicates a dependency update which has not been confirmed by" +
