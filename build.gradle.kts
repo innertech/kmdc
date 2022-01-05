@@ -1,7 +1,4 @@
 plugins {
-  if (System.getenv("CI") == null) {
-    id("plugin.git-hooks")
-  }
   id("plugin.publishing-nexus")
   id("org.jetbrains.dokka")
 }
