@@ -5,6 +5,7 @@ import dev.petuska.kmdc.button.MDCButton
 import dev.petuska.kmdc.menu.MDCMenu
 import dev.petuska.kmdc.menu.MDCMenuItem
 import dev.petuska.kmdc.menu.MDCMenuOpts
+import dev.petuska.kmdc.menu.onSelected
 import dev.petuska.kmdc.menu.surface.MDCMenuSurfaceAnchor
 import dev.petuska.kmdc.menu.surface.MDCMenuSurfaceModule
 import dev.petuska.kmdc.menu.surface.onClosed
@@ -12,7 +13,6 @@ import dev.petuska.kmdc.textfield.MDCTextField
 import dev.petuska.kmdc.textfield.MDCTextFieldCommonOpts
 import local.sandbox.engine.Sample
 import local.sandbox.engine.Samples
-import onSelected
 import org.jetbrains.compose.web.dom.Text
 
 private val SAMPLE_MENU = listOf("Menu Item 1", "Menu Item 2", "Menu Item 3")

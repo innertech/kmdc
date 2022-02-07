@@ -1,4 +1,4 @@
-import util.mdcVersion
+
 
 plugins {
   id("plugin.library-compose")
@@ -12,7 +12,7 @@ kotlin {
     jsMain {
       dependencies {
         api(project(":kmdc:kmdc-core"))
-        api(npm("@material/chips", mdcVersion))
+        api(npm("@material/chips", "13.0.0"))
       }
     }
   }

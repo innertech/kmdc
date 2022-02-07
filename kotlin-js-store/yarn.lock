@@ -68,7 +68,7 @@
     "@material/touch-target" "^13.0.0"
     tslib "^2.1.0"
 
-"@material/chips@^13.0.0":
+"@material/chips@13.0.0":
   version "13.0.0"
   resolved "https://registry.yarnpkg.com/@material/chips/-/chips-13.0.0.tgz#0681beaf61636805ddfd98b45bf7bf3b81dcb238"
   integrity sha512-Ov4runDbrROUpMqKyCi3lpknfrLzGwtV+/rfYIgTYUkEVpCHXHddxXxcjP4zqh3QLXnE6ma92PLGcxCb/zzogQ==
